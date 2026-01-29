@@ -8,6 +8,7 @@ import Best from '../Home/Best'
 import Collect from '../Home/Collect'
 import Top from '../Home/Top'
 import Wear from '../Home/Wear'
+import Footer from '../Home/Footer'
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
       <Collect />
       <Top />
       <Wear />
+      <Footer />
     </>
   );
 } export default Home
