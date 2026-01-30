@@ -15,7 +15,8 @@ function Best() {
           </p>
         </div>
       </div>
-      <div className="flex flex-row">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 py-8">
         <div className="pt-12 pl-12">
 
           <div className="relative h-72 w-64  rounded group overflow-hidden bg-white">
@@ -194,10 +195,11 @@ function Best() {
             </div>
           </div>
         </div>
-        <div className="pt-40 pl-8">
+        <div className="col-span-full flex justify-center mt-8">
           <button className="rounded-4xl px-3 py-3 hover:border text-sm">View All</button>
         </div>
       </div>
+
 
     </>
   );

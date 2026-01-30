@@ -18,15 +18,14 @@ function Slider() {
 
   return (
     <div className="pt-10">
-      <div className="bg-[#F9F6EE] h-140 ">
-        <div className="items-center flex justify-center pt-7 font-playfair">
-          <span className="text-4xl items-center text-amber-600 pr-3">CATEGORIES</span>
-          <span className="text-4xl">YOU MIGHT LIKE</span>
+      <div className="bg-[#F9F6EE] min-h-140 sm:min-h-150 md:min-h-162 pb-8">
+        <div className="flex flex-col items-center justify-center pt-4 sm:pt-6 md:pt-7 font-playfair text-center px-4">
+          <div className="flex flex-wrap justify-center items-center">
+            <span className="text-xl sm:text-2xl md:text-4xl text-amber-600 pr-1 sm:pr-2 md:pr-3">CATEGORIES</span>
+            <span className="text-xl sm:text-2xl md:text-4xl">YOU MIGHT LIKE </span>
+          </div>
+          <span className="text-xs sm:text-sm md:text-base text-gray-500 mt-2"> Lorem ipsum dolor sit amet. </span>
         </div>
-        <div className="flex justify-center items-center pt-3">
-          <span className="text-gray-500 items-center">Lorem ispum dolor sit amet.</span>
-        </div>
-
         <div ref={sliderRef} className="pl-8 pt-3 flex gap-6 overflow-x-auto no-scrollbar scroll-smooth">
 
           <div className="group flex flex-col items-center ">
