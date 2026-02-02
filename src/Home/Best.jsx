@@ -1,4 +1,6 @@
 import React from "react";
+import Newscart from "../New/Newscart"
+import { Link } from "react-router-dom";
 
 function Best() {
   return (
@@ -196,7 +198,7 @@ function Best() {
           </div>
         </div>
         <div className="col-span-full flex justify-center mt-8">
-          <button className="rounded-4xl px-3 py-3 hover:border text-sm">View All</button>
+          <Link to="/Newscart"><button className="rounded-4xl px-3 py-3 hover:border text-sm">View All</button></Link>
         </div>
       </div>
 

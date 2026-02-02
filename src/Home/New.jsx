@@ -1,4 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Newscart from "../New/Newscart"
+import Add from "../AddToCart/Add"
+
 
 function New() {
   return (
@@ -40,9 +44,11 @@ function New() {
                 <span>M</span>
                 <span>L</span>
               </div>
-              <button className="w-full bg-black text-white py-2 hover:bg-gray-800 transition">
-                Add to Cart
-              </button>
+              <Link to="/add">
+                <button className="w-full bg-black text-white py-2 hover:bg-gray-800 transition">
+                  Add to Cart
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -195,10 +201,9 @@ function New() {
           </div>
         </div>
         <div className="col-span-full flex justify-center mt-8">
-          <button className="rounded-4xl px-3 py-3 hover:border text-sm">View All</button>
+          <Link to="/Newscart"><button className="rounded-4xl px-3 py-3 hover:border text-sm">View All</button></Link>
         </div>
-      </div>
-
+      </div >
     </>
   );
 } export default New

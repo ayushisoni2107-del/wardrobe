@@ -5,7 +5,6 @@ function Collect() {
     <>
       <div className="pt-6 sm:pt-8 md:pt-10">
         <div className="bg-[#D4C6AB] min-h-75 sm:min-h-100 md:min-h-125 pt-8 sm:pt-12">
-
           <div className="px-4 sm:px-8 md:px-16 lg:px-32 flex flex-col items-center md:items-end text-center md:text-right">
             <p className="font-playfair font-light text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-amber-500 ">SUIT SET
             </p>

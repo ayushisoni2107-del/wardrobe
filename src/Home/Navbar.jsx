@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import SearchOverlay from "./Search";
+import Cart from "./Cart"
+import Carts from "../Cart/Carts"
+import { Link } from "react-router-dom";
+import Newscart from "../New/Newscart"
+
 
 function Navbar() {
+  const [openSearch, setOpenSearch] = useState(false);
+  const [openCart, setOpenCart] = useState(false);
+  const navigate = useNavigate();
   return (
     <>
       <nav className="w-full">
@@ -15,21 +25,39 @@ function Navbar() {
             <img src="/Logo.png" className="w-auto sm:w-20 md:w-18 lg:w-auto object-contain" />
           </div>
           <div className="flex flex-1 items-center justify-center md:justify-end gap-2 md:pr-24">
-            <img src="shape.png" className="w-auto sm:w-auto md:w-auto lg:w-auto pr-1 md:pr-4 cursor-pointer" />
-            <img src="h.png" className="w-auto sm:w-auto md:w-auto lg:w-auto pr-1 md:pr-4 cursor-pointer" />
-            <img src="c.png" className="w-auto sm:w-auto md:w-auto lg:w-auto pr-1 md:pr-4 cursor-pointer" />
+            <img
+              src="shape.png"
+              onClick={() => setOpenSearch(true)}
+              className="w-auto pr-1 md:pr-4 cursor-pointer"
+            />
+            <img
+              src="h.png"
+              className="w-auto pr-1 md:pr-4 cursor-pointer"
+              onClick={() => setOpenCart(true)} // OPEN CART
+            />
+            <img src="c.png"
+              onClick={() => navigate("/Carts")}
+              className="w-auto sm:w-auto md:w-auto lg:w-auto pr-1 md:pr-4 cursor-pointer" />
             <img src="p.png" className="w-auto sm:w-auto md:w-auto lg:w-auto pr-1 md:pr-4 cursor-pointer" />
           </div>
+          {/* SEARCH OVERLAY */}
+          {openSearch && (
+            <SearchOverlay onClose={() => setOpenSearch(false)} />
+          )}
+          {/* CART OVERLAY */}
+          {openCart && (
+            <Cart onClose={() => setOpenCart(false)} />
+          )}
         </div>
         <div className="w-full bg-[#1f1f1f] h-18">
           <ul className="flex justify-center items-center h-14 text-xs sm:text-sm md:text-base lg:text-lg text-gray-200 pt-4 md:pt-7">
-            <li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">All Products</li>
-            <li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Gown</li>
-            <li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Dresses</li>
-            <li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Suit Set</li>
-            <li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Top's</li>
-            <li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Co-Ord Set</li>
-            <li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Lehenga</li>
+            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">All Products</li></Link>
+            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Gown</li></Link>
+            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Dresses</li></Link>
+            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Suit Set</li></Link>
+            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Top's</li></Link>
+            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Co-Ord Set</li></Link>
+            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Lehenga</li></Link>
           </ul>
         </div>
         <div className="flex items-center justify-start flex-nowrap whitespace-nowrap overflow-hidden pt-3 md:pt-5 pb-4 md:pb-6 border-b-2 border-gray-500 text-[10px] sm:text-xs md:text-sm">

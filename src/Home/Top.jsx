@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Newscart from "../New/Newscart"
 
 function Top() {
   return (
@@ -15,6 +17,7 @@ function Top() {
           </p>
         </div>
       </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 py-8">
         <div className="pt-12 pl-12">
 
@@ -195,7 +198,7 @@ function Top() {
           </div>
         </div>
         <div className="col-span-full flex justify-center mt-8">
-          <button className="rounded-4xl px-3 py-3 hover:border text-sm">View All</button>
+          <Link to="/Newscart"><button className="rounded-4xl px-3 py-3 hover:border text-sm">View All</button></Link>
         </div>
       </div>
 
