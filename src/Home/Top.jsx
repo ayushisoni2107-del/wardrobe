@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Newscart from "../New/Newscart"
+import Add from "../AddToCart/Add"
 
 function Top() {
   return (
@@ -43,9 +44,11 @@ function Top() {
                 <span>M</span>
                 <span>L</span>
               </div>
-              <button className="w-full bg-black text-white py-2 hover:bg-gray-800 transition">
-                Add to Cart
-              </button>
+              <Link to="/Add">
+                <button className="w-full bg-black text-white py-2 hover:bg-gray-800 transition">
+                  Add to Cart
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -88,9 +91,11 @@ function Top() {
                 <span>M</span>
                 <span>L</span>
               </div>
-              <button className="w-full bg-black text-white py-2 hover:bg-gray-800 transition">
-                Add to Cart
-              </button>
+              <Link to="/Add">
+                <button className="w-full bg-black text-white py-2 hover:bg-gray-800 transition">
+                  Add to Cart
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -132,9 +137,11 @@ function Top() {
                 <span>M</span>
                 <span>L</span>
               </div>
-              <button className="w-full bg-black text-white py-2 hover:bg-gray-800 transition">
-                Add to Cart
-              </button>
+              <Link to="/Add">
+                <button className="w-full bg-black text-white py-2 hover:bg-gray-800 transition">
+                  Add to Cart
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -177,9 +184,11 @@ function Top() {
                 <span>M</span>
                 <span>L</span>
               </div>
-              <button className="w-full bg-black text-white py-2 hover:bg-gray-800 transition">
-                Add to Cart
-              </button>
+              <Link to="/Add">
+                <button className="w-full bg-black text-white py-2 hover:bg-gray-800 transition">
+                  Add to Cart
+                </button>
+              </Link>
             </div>
           </div>
 
