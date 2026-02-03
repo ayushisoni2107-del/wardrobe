@@ -2,11 +2,10 @@ import { useNavigate } from "react-router-dom";
 import PaymentSummary from "./PaymentSummary";
 import Nav from "./Nav";
 import Footer from "../Home/Footer";
-import Form from "./Form";
+import Forms from "./Forms";
 import React from "react";
-import Check from "./Check"
 
-export default function Checkout() {
+export default function Check() {
   const navigate = useNavigate();
 
   return (
@@ -24,12 +23,12 @@ export default function Checkout() {
 
           {/* LEFT SIDE */}
           <div className="lg:col-span-2  rounded-xl p-6 shadow-sm">
-            <Form />
+            <Forms />
           </div>
 
           {/* RIGHT SIDE */}
           <PaymentSummary
-            onMakePayment={() => navigate("/Check")}
+            onMakePayment={() => navigate("/")}
           />
         </div>
       </div>

@@ -6,6 +6,7 @@ import Carts from './Cart/Carts'
 import Checkout from './Cart/Checkout'
 import Newscart from "./New/Newscart"
 import Add from "./AddToCart/Add"
+import Check from './Cart/Check';
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/Newscart" element={<Newscart />} />
         <Route path="/Add" element={<Add />} />
+        <Route path="/Check" element={<Check />} />
+
       </Routes>
     </>
   )
