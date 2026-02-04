@@ -11,15 +11,15 @@ function Footer() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-3 text-gray-700 text-sm sm:text-base">
               <div className="space-y-3">
-                <p className="cursor-default hover:text-orange-500 transition">All Products</p>
-                <p className="cursor-default hover:text-orange-500 transition">New Arrivals</p>
-                <p className="cursor-default hover:text-orange-500 transition">Collections</p>
-                <p className="cursor-default hover:text-orange-500 transition">Best Seller</p>
+                <p className="cursor-default hover:text-orange-500 transition transform hover:scale-105 duration-200">All Products</p>
+                <p className="cursor-default hover:text-orange-500 transition transform hover:scale-105 duration-200">New Arrivals</p>
+                <p className="cursor-default hover:text-orange-500 transition transform hover:scale-105 duration-200">Collections</p>
+                <p className="cursor-default hover:text-orange-500 transition transform hover:scale-105 duration-200">Best Seller</p>
               </div>
               <div className="space-y-3">
-                <p className="cursor-default hover:text-orange-500 transition">About Us</p>
-                <p className="cursor-default hover:text-orange-500 transition">Contact Us</p>
-                <p className="cursor-default hover:text-orange-500 transition">Terms & Conditions</p>
+                <p className="cursor-default hover:text-orange-500 transition transform hover:scale-105 duration-200">About Us</p>
+                <p className="cursor-default hover:text-orange-500 transition transform hover:scale-105 duration-200">Contact Us</p>
+                <p className="cursor-default hover:text-orange-500 transition transform hover:scale-105 duration-200">Terms & Conditions</p>
               </div>
             </div>
           </div>

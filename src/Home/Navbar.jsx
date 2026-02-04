@@ -33,7 +33,7 @@ function Navbar() {
             <img
               src="h.png"
               className="w-auto pr-1 md:pr-4 cursor-pointer"
-              onClick={() => setOpenCart(true)} // OPEN CART
+              onClick={() => setOpenCart(true)}
             />
             <img src="c.png"
               onClick={() => navigate("/Carts")}
