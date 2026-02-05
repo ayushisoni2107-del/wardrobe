@@ -4,12 +4,14 @@ import SearchOverlay from "./Search";
 import Cart from "./Cart"
 import Carts from "../Cart/Carts"
 import { Link } from "react-router-dom";
-import Newscart from "../New/Newscart"
+import Dresses from "../Pages/Dresses"
+import Login from "./Login";
 
 
 function Navbar() {
   const [openSearch, setOpenSearch] = useState(false);
   const [openCart, setOpenCart] = useState(false);
+  const [openLogin, setOpenLogin] = useState(false);
   const navigate = useNavigate();
   return (
     <>
@@ -38,7 +40,10 @@ function Navbar() {
             <img src="c.png"
               onClick={() => navigate("/Carts")}
               className="w-auto sm:w-auto md:w-auto lg:w-auto pr-1 md:pr-4 cursor-pointer" />
-            <img src="p.png" className="w-auto sm:w-auto md:w-auto lg:w-auto pr-1 md:pr-4 cursor-pointer" />
+
+            <img src="p.png"
+              onClick={() => setOpenLogin(true)}
+              className="w-auto sm:w-auto md:w-auto lg:w-auto pr-1 md:pr-4 cursor-pointer" />
           </div>
           {/* SEARCH OVERLAY */}
           {openSearch && (
@@ -48,16 +53,20 @@ function Navbar() {
           {openCart && (
             <Cart onClose={() => setOpenCart(false)} />
           )}
+          {/* LOGIN OVERLAY */}
+          {openLogin && (
+            <Login onClose={() => setOpenLogin(false)} />
+          )}
         </div>
         <div className="w-full bg-[#1f1f1f] h-18">
           <ul className="flex justify-center items-center h-14 text-xs sm:text-sm md:text-base lg:text-lg text-gray-200 pt-4 md:pt-7">
-            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">All Products</li></Link>
-            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Gown</li></Link>
-            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Dresses</li></Link>
-            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Suit Set</li></Link>
-            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Top's</li></Link>
-            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Co-Ord Set</li></Link>
-            <Link to="/Newscart"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Lehenga</li></Link>
+            <Link to="/Dresses"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">All Products</li></Link>
+            <Link to="/Dresses"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Gown</li></Link>
+            <Link to="/Dresses"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Dresses</li></Link>
+            <Link to="/Dresses"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Suit Set</li></Link>
+            <Link to="/Dresses"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Top's</li></Link>
+            <Link to="/Dresses"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Co-Ord Set</li></Link>
+            <Link to="/Dresses"><li className="px-2 sm:px-4 md:px-6 lg:px-10 cursor-pointer hover:text-white">Lehenga</li></Link>
           </ul>
         </div>
         <div className="flex items-center justify-start flex-nowrap whitespace-nowrap overflow-hidden pt-3 md:pt-5 pb-4 md:pb-6 border-b-2 border-gray-500 text-[10px] sm:text-xs md:text-sm">

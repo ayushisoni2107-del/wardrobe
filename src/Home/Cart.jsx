@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowLeftRight, Eye, X, Trash2 } from 'lucide-react';
 import { Link } from "react-router-dom";
 import Add from "../AddToCart/Add"
+import Compare from "./Compare";
 
 function ProductCard() {
   return (
@@ -23,16 +24,17 @@ function ProductCard() {
             </div>
           </div>
         </Link>
-
-        <div className="relative group/icon">
-          <button className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-black hover:text-white transition">
-            <ArrowLeftRight />
-          </button>
-          <div className="hidden md:flex absolute right-12 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-4 py-2 rounded-full
+        <Link to="/Compare">
+          <div className="relative group/icon">
+            <button className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-black hover:text-white transition">
+              <ArrowLeftRight />
+            </button>
+            <div className="hidden md:flex absolute right-12 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-4 py-2 rounded-full
             opacity-0 translate-x-2 group-hover/icon:opacity-100 group-hover/icon:translate-x-0 transition-all duration-200 whitespace-nowrap">
-            Add to Compare
+              Add to Compare
+            </div>
           </div>
-        </div>
+        </Link>
 
         <div className="relative group/icon">
           <button className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-black hover:text-white transition">

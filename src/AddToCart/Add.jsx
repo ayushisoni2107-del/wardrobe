@@ -5,8 +5,10 @@ import Similar from "./Similar";
 import Recent from "./Recent";
 import Rating from "./Rating";
 import SizeChart from "./SizeChart";
+import Virtual from "./Virtual";
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FiHeart, FiShare2, FiMapPin } from "react-icons/fi";
 
 
@@ -93,10 +95,12 @@ function Add() {
                   <span className="text-gray-500 font-medium">Rayon</span>
                 </div>
               </div>
-              <div>
-                <img src="/t2.png"
-                  className="w-150 h-29.5" />
-              </div>
+              <Link to="/Virtual">
+                <div>
+                  <img src="/t2.png"
+                    className="w-150 h-29.5" />
+                </div>
+              </Link>
               <div className="flex flex-row gap-3">
                 <div className="w-108.25 h-14 bg-orange-500 box-border flex justify-center items-center rounded">
                   <span className="items-center text-white font-medium">Add To Bag</span>

@@ -1,15 +1,15 @@
-import PaymentSummary from "./PaymentSummary";
-import Nav from "./Nav";
-import Footer from "../Home/Footer";
-import Forms from "./Forms";
+import PaymentSummary from "../Cart/PaymentSummary.jsx";
+import Nav from "../Cart/Nav.jsx";
+import Footer from "../Home/Footer.jsx";
+import Forms from "../Cart/Forms.jsx";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import React from "react";
-import Upi from "./Upi";
-import Card from "./Card";
+import Upi from "./Upi.jsx";
+import Card from "./Card.jsx";
 import Emi from "./Emi.jsx";
-import Cod from "./Cod";
+import Cod from "./Cod.jsx";
 
 function Edit() {
   const [page, setPage] = useState("home");

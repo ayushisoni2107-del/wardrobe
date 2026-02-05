@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Newscart from "../New/Newscart"
+import Dresses from "../Pages/Dresses"
 import Add from "../AddToCart/Add"
 import Compare from "./Compare";
 import { ArrowLeftRight, Eye } from 'lucide-react';
@@ -81,10 +81,12 @@ function New() {
             </div>
 
             <div className="absolute top-2 right-2 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
-              <div className="relative group/icon">
-                <button className="w-9 h-9 bg-white rounded-full shadow flex items-center justify-center hover:bg-gray-100"> <ArrowLeftRight /></button>
-                <div className="absolute right-11 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover/icon:opacity-100 transition whitespace-nowrap"> Add to Compare</div>
-              </div>
+              <Link to="/Compare">
+                <div className="relative group/icon">
+                  <button className="w-9 h-9 bg-white rounded-full shadow flex items-center justify-center hover:bg-gray-100"> <ArrowLeftRight /></button>
+                  <div className="absolute right-11 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover/icon:opacity-100 transition whitespace-nowrap"> Add to Compare</div>
+                </div>
+              </Link>
               <Link to="/Add">
                 <div className="relative group/icon">
                   <button className="w-9 h-9 bg-white rounded-full shadow flex items-center justify-center hover:bg-gray-100"><Eye /></button>
@@ -129,10 +131,12 @@ function New() {
               <p>40% OFF</p>
             </div>
             <div className="absolute top-2 right-2 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
-              <div className="relative group/icon">
-                <button className="w-9 h-9 bg-white rounded-full shadow flex items-center justify-center hover:bg-gray-100"> <ArrowLeftRight /></button>
-                <div className="absolute right-11 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover/icon:opacity-100 transition whitespace-nowrap"> Add to Compare</div>
-              </div>
+              <Link to="/Compare">
+                <div className="relative group/icon">
+                  <button className="w-9 h-9 bg-white rounded-full shadow flex items-center justify-center hover:bg-gray-100"> <ArrowLeftRight /></button>
+                  <div className="absolute right-11 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover/icon:opacity-100 transition whitespace-nowrap"> Add to Compare</div>
+                </div>
+              </Link>
               <Link to="/Add">
                 <div className="relative group/icon">
                   <button className="w-9 h-9 bg-white rounded-full shadow flex items-center justify-center hover:bg-gray-100"><Eye /></button>
@@ -178,10 +182,12 @@ function New() {
             </div>
 
             <div className="absolute top-2 right-2 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
-              <div className="relative group/icon">
-                <button className="w-9 h-9 bg-white rounded-full shadow flex items-center justify-center hover:bg-gray-100"> <ArrowLeftRight /></button>
-                <div className="absolute right-11 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover/icon:opacity-100 transition whitespace-nowrap"> Add to Compare</div>
-              </div>
+              <Link to="/Compare">
+                <div className="relative group/icon">
+                  <button className="w-9 h-9 bg-white rounded-full shadow flex items-center justify-center hover:bg-gray-100"> <ArrowLeftRight /></button>
+                  <div className="absolute right-11 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover/icon:opacity-100 transition whitespace-nowrap"> Add to Compare</div>
+                </div>
+              </Link>
               <Link to="/Add">
                 <div className="relative group/icon">
                   <button className="w-9 h-9 bg-white rounded-full shadow flex items-center justify-center hover:bg-gray-100"><Eye /></button>
@@ -219,7 +225,7 @@ function New() {
           </div>
         </div>
         <div className="col-span-full flex justify-center mt-8">
-          <Link to="/Newscart"><button className="rounded-4xl px-3 py-3 hover:border text-sm">View All</button></Link>
+          <Link to="/Dresses"><button className="rounded-4xl px-3 py-3 hover:border text-sm">View All</button></Link>
         </div>
       </div >
     </>

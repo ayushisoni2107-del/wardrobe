@@ -3,7 +3,7 @@ import PaymentSummary from "./PaymentSummary";
 import Nav from "./Nav";
 import Footer from "../Home/Footer";
 import Forms from "./Forms";
-import Edit from "./Edit";
+import Pay from "../Payment/Pay";
 import React from "react";
 
 export default function Check() {
@@ -29,7 +29,7 @@ export default function Check() {
 
           {/* RIGHT SIDE */}
           <PaymentSummary
-            onMakePayment={() => navigate("/Edit")}
+            onMakePayment={() => navigate("/Pay")}
           />
         </div>
       </div>

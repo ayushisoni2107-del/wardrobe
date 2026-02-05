@@ -30,7 +30,7 @@ function Slider() {
         <div ref={sliderRef} className="pl-8 pt-3 flex gap-6 overflow-x-auto no-scrollbar scroll-smooth">
 
           <div className="group flex flex-col items-center ">
-            <div onClick={() => navigate("/newscart")} className=" relative box-border h-96 w-64 group-hover:bg-gray-200 rounded-full transition group">
+            <div onClick={() => navigate("/Dresses")} className=" relative box-border h-96 w-64 group-hover:bg-gray-200 rounded-full transition group">
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-300">
                 <div className="w-10 h-10 bg-white rounded-full shadow flex items-center justify-center text-2xl">
                   ↗
@@ -48,7 +48,7 @@ function Slider() {
           </div>
 
           <div className="group flex flex-col items-center">
-            <div onClick={() => navigate("/newscart")} className="relative box-border h-96 w-64 group-hover:bg-gray-200 rounded-full transition group">
+            <div onClick={() => navigate("/Dresses")} className="relative box-border h-96 w-64 group-hover:bg-gray-200 rounded-full transition group">
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-300">
                 <div className="w-10 h-10 bg-white rounded-full shadow flex items-center justify-center text-2xl">
                   ↗
@@ -66,7 +66,7 @@ function Slider() {
           </div>
 
           <div className="group flex flex-col items-center">
-            <div onClick={() => navigate("/newscart")} className="relative transition group box-border h-96 w-64 group-hover:bg-gray-200 rounded-full">
+            <div onClick={() => navigate("/Dresses")} className="relative transition group box-border h-96 w-64 group-hover:bg-gray-200 rounded-full">
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-300">
                 <div className="w-10 h-10 bg-white rounded-full shadow flex items-center justify-center text-2xl">
                   ↗
@@ -84,7 +84,7 @@ function Slider() {
           </div>
 
           <div className="group flex flex-col items-center">
-            <div onClick={() => navigate("/newscart")} className="relative transition group box-border h-96 w-64 group-hover:bg-gray-200 rounded-full">
+            <div onClick={() => navigate("/Dresses")} className="relative transition group box-border h-96 w-64 group-hover:bg-gray-200 rounded-full">
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-300">
                 <div className="w-10 h-10 bg-white rounded-full shadow flex items-center justify-center text-2xl">
                   ↗
@@ -102,7 +102,7 @@ function Slider() {
           </div>
 
           <div className="group flex flex-col items-center">
-            <div onClick={() => navigate("/newscart")} className="relative transition box-border h-96 w-64 group-hover:bg-gray-200 rounded-full">
+            <div onClick={() => navigate("/Dresses")} className="relative transition box-border h-96 w-64 group-hover:bg-gray-200 rounded-full">
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-300">
                 <div className="w-10 h-10 bg-white rounded-full shadow flex items-center justify-center text-2xl">
                   ↗
@@ -120,7 +120,7 @@ function Slider() {
           </div>
 
           <div className="group flex flex-col items-center">
-            <div onClick={() => navigate("/newscart")} className="relative box-border h-96 w-64 group-hover:bg-gray-200 rounded-full transition group">
+            <div onClick={() => navigate("/Dresses")} className="relative box-border h-96 w-64 group-hover:bg-gray-200 rounded-full transition group">
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-300">
                 <div className="w-10 h-10 bg-white rounded-full shadow flex items-center justify-center text-2xl">
                   ↗

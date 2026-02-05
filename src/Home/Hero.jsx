@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Newscart from "../New/Newscart"
+import Dresses from "../Pages/Dresses"
 
 function Hero() {
   return (
@@ -21,7 +21,7 @@ function Hero() {
           </p>
         </div>
         {["New Arrivals", "Best Seller", "Top Rated", "Brands We Love", "Trending",].map((item, i) => (
-          <Link to="/Newscart" key={i} className="group flex flex-col items-center cursor-pointer">
+          <Link to="/Dresses" key={i} className="group flex flex-col items-center cursor-pointer">
             <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-20 md:h-20 lg:w-39.5 lg:h-39.5 rounded-full border-2 sm:border-4 border-gray-300 flex items-center justify-center font-semibold transition-transform duration-300
           group-hover:scale-110 "></div>
             <p className="  mt-0.5 sm:mt-1 md:mt-2 text-[9px] sm:text-xs md:text-sm lg:text-lg text-center transition-colors duration-300 group-hover:text-orange-500">

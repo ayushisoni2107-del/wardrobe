@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Newscart from "../New/Newscart"
+import Dresses from "../Pages/Dresses"
 
 
 function Similar() {
@@ -198,7 +198,7 @@ function Similar() {
           </div>
         </div>
         <div className="col-span-full flex justify-center mt-8">
-          <Link to="/Newscart"><button className="rounded-4xl px-3 py-3 hover:border text-sm">View All</button></Link>
+          <Link to="/Dresses"><button className="rounded-4xl px-3 py-3 hover:border text-sm">View All</button></Link>
         </div>
       </div >
     </>
